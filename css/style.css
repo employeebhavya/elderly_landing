@@ -117,14 +117,26 @@ a:hover {
   margin: 0 auto;
   padding: 0 80px;
 }
+@media (min-width: 768px) {
+  @media (min-width: 1536px) {
+    .md\:container {
+      max-width: 1440px !important;
+      padding: 0 80px;
+    }
+  }
+}
 
 @media (max-width: 1200px) {
   .container {
     padding: 0 30px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     padding: 0 20px;
+  }
+  .mobile-form-space {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
