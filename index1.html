@@ -126,21 +126,36 @@
           </div>
         </div>
         <video
+          id="desktop-video"
           class="hidden md:block absolute inset-0 w-full h-full lg:h-full object-cover"
           src="./assets/video-desktop.mp4"
           autoplay
           muted
           loop
+          playsinline
+          preload="auto"
+          webkit-playsinline="true"
+          x-webkit-airplay="allow"
+          disablePictureInPicture
         ></video>
         <video
+          id="mobile-video"
           class="md:hidden absolute inset-0 w-full h-[90vh] lg:h-full object-cover"
           src="./assets/video-mobile.mp4"
           autoplay
           muted
           loop
+          playsinline
+          preload="auto"
+          webkit-playsinline="true"
+          x-webkit-airplay="allow"
+          disablePictureInPicture
         ></video>
         <div class="absolute inset-0 bg-black opacity-30"></div>
       </section>
     </div>
+
+    <!-- JavaScript to handle mobile video playback -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
