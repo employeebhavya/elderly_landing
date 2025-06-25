@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elderly Wellness | Elder Care Services in Chennai</title>
+    <meta property="og:site_name" content="Elderly Wellness" />
+    <meta
+      name="description"
+      content=" Contact us today at +91 99448 90577 for expert elder care services in Chennai. Elderly Wellness provides compassionate and personalized care for your loved ones."
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2786a5",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="container flex items-center justify-between py-2">
+        <a href="./index.html" class="flex items-center justify-between">
+          <img
+            class="w-[59px] h-auto object-cover"
+            src="./assets/logo.png"
+            alt="Elderly Wellness Logo"
+          />
+        </a>
+        <div class="flex items-center justify-between">
+          <a
+            href="#enquire"
+            class="bg-primary text-white py-1.5 px-6 rounded-full hover:bg-black hover:scale-105 hover:text-white transition duration-300"
+          >
+            Enquire Now
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <section
+        class="relative h-[120vh] md:h-[100vh] lg:h-[90vh] bg-cover bg-center flex items-end justify-center pb-8 md:pb-5 bg-gray-900"
+      >
+        <div
+          class="container z-10 relative flex flex-col-reverse lg:flex-row gap-6"
+        >
+          <div class="relative flex-1">
+            <h1 class="text-2xl md:text-3xl font-bold text-white mb-4">
+              Best Elder Care Services in Chennai
+            </h1>
+            <p class="text-lg md:text-2xl font-semibold text-white mb-6">
+              Where Age meets Assistance - Premium Elder Care services at home
+              in Chennai.
+            </p>
+            <a
+              class="bg-primary text-white py-2 px-6 rounded-full hover:bg-black hover:scale-105 hover:text-white transition duration-300"
+              href="#download"
+              >Download the App</a
+            >
+          </div>
+          <div class="relative flex-1 bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold mb-6">
+              Enquire <span class="text-primary">Now</span>
+            </h3>
+            <form action="">
+              <div class="flex items-center justify-between">
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="w-full px-4 py-2 rounded-l-full text-gray-700 placeholder:text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-full px-4 py-2 rounded-r-full text-gray-700 placeholder:text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary ml-2"
+                />
+              </div>
+              <div class="flex items-center justify-between mt-6">
+                <input
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  class="w-full px-4 py-2 rounded-l-full text-gray-700 placeholder:text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+                <input
+                  type="text"
+                  placeholder="Enter your city"
+                  class="w-full px-4 py-2 rounded-r-full text-gray-700 placeholder:text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary ml-2"
+                />
+              </div>
+              <div class="flex items-center justify-between mt-6">
+                <select
+                  name="location"
+                  id=""
+                  class="w-full px-4 text-gray-700 placeholder:text-gray-700 py-2 rounded-l-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                >
+                  <option value="" disabled selected>
+                    Select Care Service
+                  </option>
+                  <option value="physiotherapy">Physiotherapy</option>
+                  <option value="nursing">Nursing</option>
+                  <option value="geriatric-care">Geriatric Care</option>
+                  <option value="assisted-living-support">
+                    Assisted Living Support
+                  </option>
+                  <option value="elderly-care">Elderly Care</option>
+                </select>
+                <button
+                  type="submit"
+                  class="bg-primary text-white px-6 py-2 rounded-r-full hover:bg-black hover:scale-105 hover:text-white transition duration-300 ml-2"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <video
+          class="hidden md:block absolute inset-0 w-full h-full lg:h-full object-cover"
+          src="./assets/video-desktop.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <video
+          class="md:hidden absolute inset-0 w-full h-[90vh] lg:h-full object-cover"
+          src="./assets/video-mobile.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+      </section>
+    </div>
+  </body>
+</html>
