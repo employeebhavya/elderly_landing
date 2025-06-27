@@ -15,6 +15,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -27,6 +31,55 @@
         },
       };
     </script>
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-weight: bold;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #333;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      @media (max-width: 768px) {
+        .swiper-button-next,
+        .swiper-button-prev {
+          width: 35px;
+          height: 35px;
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+          font-size: 14px;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -48,7 +101,7 @@
         </div>
       </div>
     </header>
-    <div class="main">
+    <div class="relative">
       <section
         class="relative h-[120vh] md:h-[100vh] lg:h-[90vh] bg-cover bg-center flex items-end justify-center pb-0 md:pb-5"
       >
@@ -58,15 +111,17 @@
           <div
             class="bg-gray-900 md:bg-transparent px-5 md:px-0 py-6 md:py-0 relative flex-1"
           >
-            <h1 class="text-2xl md:text-3xl font-bold text-white mb-4">
+            <h1
+              class="text-2xl md:text-3xl font-bold text-white mb-4 -tracking-[.5px]"
+            >
               Best Elder Care Services in Chennai
             </h1>
-            <p class="text-lg md:text-2xl font-semibold text-white mb-6">
+            <p class="text-lg md:text-xl font-semibold text-white mb-6">
               Where Age meets Assistance - Premium Elder Care services at home
               in Chennai.
             </p>
             <a
-              class="bg-primary text-white py-2 px-6 rounded-full hover:bg-black hover:scale-105 hover:text-white transition duration-300"
+              class="bg-primary text-white py-2 px-6 mt-2 rounded-full hover:bg-black hover:scale-105 hover:text-white transition duration-300"
               href="#download"
               >Download the App</a
             >
@@ -166,8 +221,773 @@
         ></video>
         <div class="absolute inset-0 bg-black opacity-30"></div>
       </section>
+
+      <section class="bg-gray-100 py-14">
+        <div class="container flex flex-col gap-8 items-center">
+          <h2
+            class="text-2xl md:text-3xl font-semibold text-center -tracking-[.5px]"
+          >
+            Elderly <span class="text-primary">Services</span>
+          </h2>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-5"
+          >
+            <div
+              class="bg-white pt-5 rounded-t-3xl flex flex-col items-center shadow-sm"
+            >
+              <h3 class="text-lg font-semibold">Physiotherapy</h3>
+              <p class="text-gray-600 text-base px-4 text-center">
+                Personalized therapy to help you regain strength, mobility, and
+                live pain-free with expert care.
+              </p>
+              <img src="./assets/Physiotherapy.png" alt="Service 1" />
+            </div>
+            <div
+              class="bg-white pt-5 rounded-t-3xl flex flex-col items-center shadow-sm"
+            >
+              <h3 class="text-lg font-semibold">Nursing</h3>
+              <p class="text-gray-600 text-base px-4 text-center">
+                Compassionate nursing care at your doorstep, ensuring comfort,
+                recovery, and peace of mind.
+              </p>
+              <img src="./assets/Nurse.png" alt="Service 1" />
+            </div>
+            <div
+              class="bg-white pt-5 rounded-t-3xl flex flex-col items-center shadow-sm"
+            >
+              <h3 class="text-lg font-semibold">Geriatric Care</h3>
+              <p class="text-gray-600 text-base px-4 text-center">
+                Dedicated support for elderly loved ones, promoting
+                independence, health, and emotional well-being.
+              </p>
+              <img src="./assets/geriatric-care.png" alt="Service 1" />
+            </div>
+            <div
+              class="bg-white pt-5 rounded-t-3xl flex flex-col items-center shadow-sm"
+            >
+              <h3 class="text-lg font-semibold">Assisted Living Support</h3>
+              <p class="text-gray-600 text-base px-4 text-center">
+                Helping seniors with daily tasks while ensuring dignity, safety,
+                and a better quality of life.
+              </p>
+              <img src="./assets/assisted-living-care.png" alt="Service 1" />
+            </div>
+          </div>
+          <a
+            class="bg-primary text-white py-2 px-6 mt-4 rounded-full hover:bg-black hover:scale-105 hover:text-white transition duration-300"
+            href="#download"
+            >Download the App</a
+          >
+        </div>
+      </section>
+
+      <section class="bg-white py-14 relative">
+        <div
+          class="container grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"
+        >
+          <div class="flex flex-col gap-4 items-start">
+            <h2
+              class="text-2xl md:text-3xl font-semibold text-black -tracking-[.5px]"
+            >
+              About <span class="text-primary">Elderly Wellness</span>
+            </h2>
+            <p>
+              At Elderly Wellness, we’re focused on making elderly care easy,
+              reliable, and accessible. By connecting families with highly
+              trained professionals who specialize in nursing care,
+              physiotherapy, and assisted living support, we ensure peace of
+              mind for families, and quality of life for seniors.
+            </p>
+            <p>
+              Elderly Wellness offers a full range of services to meet the
+              varied needs of elderly individuals, helping them live safely,
+              independently, and with dignity at home.
+            </p>
+            <a
+              class="bg-primary text-white py-2 px-6 mt-2 rounded-full hover:bg-black hover:scale-105 hover:text-white transition duration-300"
+              href="#form"
+              >Enquire Now</a
+            >
+          </div>
+          <div class="flex justify-center items-center">
+            <img class="rounded-3xl" src="./assets/wellness.jpeg" alt="image" />
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-primary py-14 relative">
+        <div class="container flex flex-col gap-8 items-center">
+          <h2
+            class="text-2xl md:text-3xl font-semibold text-white -tracking-[.5px]"
+          >
+            Why Elderly Wellness?
+          </h2>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8"
+          >
+            <div
+              class="text-white flex flex-col items-center gap-2 text-center"
+            >
+              <img class="h-20" src="./assets/ew1.png" alt="image" />
+              <h3 class="text-lg font-semibold">
+                Simplified Discovery Process
+              </h3>
+              <p>
+                Finding the right care provider can be overwhelming, but our
+                care specialists make it easy. They assess your loved one’s
+                needs and match them with the most suitable caregiver, saving
+                you time and effort.
+              </p>
+            </div>
+            <div
+              class="text-white flex flex-col items-center gap-2 text-center"
+            >
+              <img class="h-20" src="./assets/ew2.png" alt="image" />
+              <h3 class="text-lg font-semibold">
+                Affordable, Transparent Care
+              </h3>
+              <p>
+                We offer flexible, slab-based pricing, ensuring top-quality care
+                that fits within your budget. Our transparent pricing system
+                helps you choose the right service without any surprises.
+              </p>
+            </div>
+            <div
+              class="text-white flex flex-col items-center gap-2 text-center"
+            >
+              <img class="h-20" src="./assets/ew3.png" alt="image" />
+              <h3 class="text-lg font-semibold">Reliable, Long-term Support</h3>
+              <p>
+                At Elderly Wellness, we provide reliable, consistent care with
+                caregivers trained at our Elderly Academy (EACH). If delays
+                occur, we guarantee a replacement within 2 hours—because your
+                loved ones deserve uninterrupted support.
+              </p>
+            </div>
+          </div>
+          <a
+            class="bg-white text-primary py-2 px-6 rounded-full hover:bg-black hover:scale-105 hover:text-white transition duration-300"
+            href="#form"
+            >Enquire Now</a
+          >
+        </div>
+      </section>
+
+      <section class="bg-gray-100 py-14 relative">
+        <div class="container flex flex-col gap-8 items-center">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <a
+            class="bg-primary text-white py-2 px-6 mt-2 rounded-full hover:bg-black hover:scale-105 hover:text-white transition duration-300"
+            href="#form"
+            >Enquire Now</a
+          >
+        </div>
+      </section>
+
+      <section class="bg-primary pt-14 relative">
+        <div
+          class="container grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"
+        >
+          <div class="flex flex-col gap-2 items-start">
+            <h4 class="text-white text-lg">EASE DOWNLOAD</h4>
+            <h2
+              class="text-white text-2xl md:text-3xl font-semibold -tracking-[.5px]"
+            >
+              Download Elderly App
+            </h2>
+            <p class="text-white">
+              Elderly connects you with trusted, vetted professionals for
+              personalised in-home care services. Whether it’s nursing care,
+              physiotherapy, or caretaking, we ensure your elderly family
+              members receive the best care right at home.
+            </p>
+            <a
+              class="bg-white text-primary py-2 px-6 mt-4 rounded-full hover:bg-black hover:scale-105 hover:text-white transition duration-300"
+              href="#form"
+              >Download Now</a
+            >
+          </div>
+          <div class="flex justify-center items-center">
+            <img src="./assets/download.png" alt="image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2
+              class="text-2xl md:text-3xl font-semibold text-black mb-2 -tracking-[.5px]"
+            >
+              Latest <span class="text-primary">Blogs</span>
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Discover helpful tips and insights for elderly care
+            </p>
+          </div>
+
+          <div
+            id="blog-posts"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+          >
+            <!-- Blog posts will be loaded here dynamically -->
+            <div class="text-center py-8">
+              <div class="animate-pulse">
+                <div class="h-48 bg-gray-200 rounded-lg mb-4"></div>
+                <div class="h-6 bg-gray-200 rounded w-3/4 mx-auto mb-3"></div>
+                <div class="h-4 bg-gray-200 rounded w-5/6 mx-auto mb-2"></div>
+                <div class="h-4 bg-gray-200 rounded w-4/6 mx-auto"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <a
+              class="bg-primary text-white py-2 px-6 mt-2 rounded-full hover:bg-black hover:scale-105 hover:text-white transition duration-300"
+              href="https://theelderlywellness.com/blogs/"
+              >View All Blogs</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="py-16 relative bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-12">
+            <h2
+              class="text-2xl md:text-3xl font-semibold text-black mb-2 -tracking-[.5px]"
+            >
+              Frequently <span class="text-primary">Asked Questions</span>
+            </h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+              Find quick answers to common questions about our elderly care
+              services
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Left Column -->
+            <div class="space-y-6">
+              <!-- FAQ Item 1 -->
+              <div
+                class="overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <button
+                  class="faq-toggle w-full flex justify-between items-center p-4 text-left group"
+                  data-column="left"
+                >
+                  <h3
+                    class="text-lg font-semibold text-black group-hover:text-primary transition-colors duration-200"
+                  >
+                    What happens after I sign up and select the service I need?
+                  </h3>
+                  <svg
+                    class="w-5 h-5 text-black transform transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="faq-content transition-all duration-300 ease-in-out overflow-hidden max-h-0"
+                  data-column="left"
+                >
+                  <div class="px-6 pb-6 text-gray-700">
+                    Once you sign up and select the service you need, our
+                    Elderly Wellness specialist will call you. The specialist
+                    will discuss your requirements and assign the most suitable
+                    physiotherapist, nurse, or caregiver based on the elderly
+                    person's needs and preferences.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div
+                class="overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <button
+                  class="faq-toggle w-full flex justify-between items-center p-4 text-left group"
+                  data-column="left"
+                >
+                  <h3
+                    class="text-lg font-semibold text-black group-hover:text-primary transition-colors duration-200"
+                  >
+                    Can I book more than one session in a day?
+                  </h3>
+                  <svg
+                    class="w-5 h-5 text-black transform transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="faq-content transition-all duration-300 ease-in-out overflow-hidden max-h-0"
+                  data-column="left"
+                >
+                  <div class="px-6 pb-6 text-gray-700">
+                    Yes, you can book multiple sessions for the same day. During
+                    the call with our specialist, you can confirm the
+                    availability of the service provider and schedule additional
+                    sessions if needed.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div
+                class="overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <button
+                  class="faq-toggle w-full flex justify-between items-center p-4 text-left group"
+                  data-column="left"
+                >
+                  <h3
+                    class="text-lg font-semibold text-black group-hover:text-primary transition-colors duration-200"
+                  >
+                    How do I pay for the service?
+                  </h3>
+                  <svg
+                    class="w-5 h-5 text-black transform transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="faq-content transition-all duration-300 ease-in-out overflow-hidden max-h-0"
+                  data-column="left"
+                >
+                  <div class="px-6 pb-6 text-gray-700">
+                    Once the service provider is assigned, you'll receive the
+                    details and can make a secure payment directly through the
+                    app. After the payment is confirmed, the booking will be
+                    finalized.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div
+                class="overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <button
+                  class="faq-toggle w-full flex justify-between items-center p-4 text-left group"
+                  data-column="left"
+                >
+                  <h3
+                    class="text-lg font-semibold text-black group-hover:text-primary transition-colors duration-200"
+                  >
+                    How can I change the contact information or address of the
+                    elderly person?
+                  </h3>
+                  <svg
+                    class="w-5 h-5 text-black transform transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="faq-content transition-all duration-300 ease-in-out overflow-hidden max-h-0"
+                  data-column="left"
+                >
+                  <div class="px-6 pb-6 text-gray-700">
+                    You can update the contact details and address of the
+                    elderly person directly in your account settings within the
+                    app. Please ensure that these details are updated before
+                    finalizing any service bookings.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div
+                class="overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <button
+                  class="faq-toggle w-full flex justify-between items-center p-4 text-left group"
+                  data-column="left"
+                >
+                  <h3
+                    class="text-lg font-semibold text-black group-hover:text-primary transition-colors duration-200"
+                  >
+                    How do I track the status of my booking or service?
+                  </h3>
+                  <svg
+                    class="w-5 h-5 text-black transform transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="faq-content transition-all duration-300 ease-in-out overflow-hidden max-h-0"
+                  data-column="left"
+                >
+                  <div class="px-6 pb-6 text-gray-700">
+                    Once the service provider is assigned, you will receive
+                    notifications via the app about their arrival time and
+                    status updates. You can track the status of the service
+                    through the app, including real-time updates as the session
+                    progresses.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6">
+              <!-- FAQ Item 6 -->
+              <div
+                class="overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <button
+                  class="faq-toggle w-full flex justify-between items-center p-4 text-left group"
+                  data-column="right"
+                >
+                  <h3
+                    class="text-lg font-semibold text-black group-hover:text-primary transition-colors duration-200"
+                  >
+                    How will I know which service provider is assigned to my
+                    booking?
+                  </h3>
+                  <svg
+                    class="w-5 h-5 text-black transform transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="faq-content transition-all duration-300 ease-in-out overflow-hidden max-h-0"
+                  data-column="right"
+                >
+                  <div class="px-6 pb-6 text-gray-700">
+                    After our Elderly Wellness specialist contacts you, they
+                    will assign a service provider based on the elderly person's
+                    needs. You will receive the details of the physiotherapist,
+                    nurse, or caregiver, including their profile,
+                    qualifications, and experience in the app.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 7 -->
+              <div
+                class="overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <button
+                  class="faq-toggle w-full flex justify-between items-center p-4 text-left group"
+                  data-column="right"
+                >
+                  <h3
+                    class="text-lg font-semibold text-black group-hover:text-primary transition-colors duration-200"
+                  >
+                    What if the service provider does not arrive on time?
+                  </h3>
+                  <svg
+                    class="w-5 h-5 text-black transform transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="faq-content transition-all duration-300 ease-in-out overflow-hidden max-h-0"
+                  data-column="right"
+                >
+                  <div class="px-6 pb-6 text-gray-700">
+                    If there is any delay, you will be notified via the app. In
+                    case of significant delays, please contact our customer
+                    support team for assistance, and we'll help resolve the
+                    issue.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 8 -->
+              <div
+                class="overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <button
+                  class="faq-toggle w-full flex justify-between items-center p-4 text-left group"
+                  data-column="right"
+                >
+                  <h3
+                    class="text-lg font-semibold text-black group-hover:text-primary transition-colors duration-200"
+                  >
+                    Can I request the same service provider for future sessions?
+                  </h3>
+                  <svg
+                    class="w-5 h-5 text-black transform transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="faq-content transition-all duration-300 ease-in-out overflow-hidden max-h-0"
+                  data-column="right"
+                >
+                  <div class="px-6 pb-6 text-gray-700">
+                    Yes, you can request the same service provider for future
+                    sessions by noting their profile and mentioning it when
+                    booking. If the provider is available, they can be scheduled
+                    for additional sessions.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 9 -->
+              <div
+                class="overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <button
+                  class="faq-toggle w-full flex justify-between items-center p-4 text-left group"
+                  data-column="right"
+                >
+                  <h3
+                    class="text-lg font-semibold text-black group-hover:text-primary transition-colors duration-200"
+                  >
+                    Is my payment information safe?
+                  </h3>
+                  <svg
+                    class="w-5 h-5 text-black transform transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  class="faq-content transition-all duration-300 ease-in-out overflow-hidden max-h-0"
+                  data-column="right"
+                >
+                  <div class="px-6 pb-6 text-gray-700">
+                    Yes, all payment transactions are processed securely through
+                    encrypted methods. Your payment and personal information are
+                    fully protected and stored securely according to the highest
+                    standards of privacy and security.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="bg-gray-100 text-white py-16">
+        <div class="container flex flex-col items-center gap-6">
+          <div class="flex flex-col lg:flex-row gap-12">
+            <div class="flex justify-start items-start">
+              <img src="./assets/logo.png" alt="logo" class="h-20" />
+            </div>
+            <div class="pl-0 lg:pl-20 flex flex-col gap-2 items-start">
+              <h4 class="text-lg font-semibold text-black">
+                Personalized care for your loved ones, right at home connect
+                with trusted professionals today.
+              </h4>
+              <a
+                class="bg-primary text-white py-2 px-6 mt-2 rounded-full hover:bg-black hover:scale-105 hover:text-white transition duration-300"
+                href="#form"
+                >Enquire Now</a
+              >
+            </div>
+            <div class="flex flex-col gap-5">
+              <div class="flex flex-col gap-1">
+                <h3 class="text-lg font-semibold text-black">Email Us</h3>
+                <a class="text-black" href="mailto:info@theelderlywellness.com"
+                  >info@theelderlywellness.com</a
+                >
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-semibold text-black">Download app</h3>
+                <div class="flex gap-4">
+                  <a
+                    class="hover:scale-110 transition-all duration-300"
+                    href="https://play.google.com/store/apps/details?id=com.elderly.nri"
+                    target="_blank"
+                    ><img
+                      class="h-12"
+                      src="./assets/play-store.png"
+                      alt="play store"
+                  /></a>
+                  <a
+                    class="hover:scale-110 transition-all duration-300"
+                    href="https://apps.apple.com/in/app/elderly-care-plus/id6740391242"
+                    target="_blank"
+                    ><img
+                      class="h-12"
+                      src="./assets/app-store.png"
+                      alt="app store"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 text-gray-800">
+            <a
+              class="hover:scale-150 transition-all duration-300"
+              href="https://www.facebook.com/profile.php?id=100089074061784"
+              target="_blank"
+              ><i class="ri-facebook-circle-fill text-xl"></i
+            ></a>
+            <a
+              class="hover:scale-150 transition-all duration-300"
+              href="https://x.com/elderly____?s=11"
+              target="_blank"
+              ><i class="ri-twitter-fill text-xl"></i
+            ></a>
+            <a
+              class="hover:scale-150 transition-all duration-300"
+              href="https://www.instagram.com/elderly__wellness?igsh=MW43cmZpb2liaGNzdA=="
+              target="_blank"
+              ><i class="ri-instagram-fill text-xl"></i
+            ></a>
+            <a
+              class="hover:scale-150 transition-all duration-300"
+              href="https://www.linkedin.com/company/elderly-wellness-service-pvt-ltd/about/"
+              target="_blank"
+              ><i class="ri-linkedin-fill text-xl"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+
+      <div
+        id="back-to-top"
+        class="fixed bottom-4 right-4 z-50 bg-primary text-white size-10 flex items-center justify-center cursor-pointer rounded-full p-2 shadow-lg hover:shadow-xl transition-all scale-0 duration-300"
+      >
+        <i class="ri-arrow-up-line"></i>
+      </div>
     </div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // Responsive breakpoints
+        breakpoints: {
+          // When window width is >= 640px (mobile)
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // When window width is >= 768px (tablet)
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          // When window width is >= 1024px (desktop)
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
     <!-- JavaScript to handle mobile video playback -->
     <script src="./js/script.js"></script>
   </body>
