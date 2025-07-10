@@ -144,3 +144,20 @@ a:hover {
     margin-right: 20px;
   }
 }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+}
+
+.swiper-slide iframe {
+  width: 100%;
+  aspect-ratio: 9/16; /* Shorts aspect ratio (vertical) */
+  max-width: 360px; /* Optimal max width for Shorts */
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
