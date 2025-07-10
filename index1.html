@@ -103,13 +103,26 @@
     </header>
     <div class="relative">
       <section
-        class="relative h-[120vh] md:h-[100vh] lg:h-[90vh] bg-cover bg-center flex items-end justify-center pb-0 md:pb-5"
+        class="relative bg-gray-300 h-[120vh] md:h-[100vh] lg:h-[90vh] bg-cover bg-center flex flex-col items-end justify-end pb-0 md:pb-5"
       >
+        <video
+          id="mobile-video"
+          class="md:hidden w-full h-full object-cover"
+          src="./assets/video-mobile.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          webkit-playsinline="true"
+          x-webkit-airplay="allow"
+          disablePictureInPicture
+        ></video>
         <div
           class="md:container z-10 relative flex flex-col-reverse lg:flex-row gap-6"
         >
           <div
-            class="bg-gray-900 md:bg-transparent px-5 md:px-0 py-8 md:py-0 relative flex-1"
+            class="md:bg-transparent px-5 md:px-0 pt-0 pb-10 md:pt-0 md:pb-0 relative flex-1"
           >
             <h1
               class="text-2xl md:text-3xl font-bold text-white mb-4 -tracking-[.5px]"
@@ -117,7 +130,7 @@
               Best Elder Care Services in Chennai
             </h1>
             <p class="text-lg md:text-xl font-semibold text-white mb-6">
-              Where Age meets Assistance - Premium Elder Care services at home
+              Where Age meets Assistance - Premium Elder Care Services at Home
               in Chennai.
             </p>
             <a
@@ -127,7 +140,7 @@
             >
           </div>
           <div
-            class="mobile-form-space relative flex-1 bg-white p-6 rounded-lg shadow-lg"
+            class="mobile-form-space mt-8 md:mt-0 relative flex-1 bg-white p-2 md:p-6 rounded-lg shadow-lg"
             id="form"
           >
             <h3 class="text-2xl font-semibold mb-6">
@@ -138,29 +151,34 @@
                 <input
                   type="text"
                   placeholder="Name*"
+                  required
                   class="w-full px-4 py-2 rounded-l-full text-gray-700 placeholder:text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
                 <input
                   type="email"
                   placeholder="Email*"
+                  required
                   class="w-full px-4 py-2 rounded-r-full text-gray-700 placeholder:text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary ml-2"
                 />
               </div>
               <div class="flex items-center justify-between mt-6">
                 <input
                   type="tel"
+                  required
                   placeholder="Phone Number*"
                   class="w-full px-4 py-2 rounded-l-full text-gray-700 placeholder:text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
                 <input
                   type="text"
                   placeholder="City*"
+                  required
                   class="w-full px-4 py-2 rounded-r-full text-gray-700 placeholder:text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary ml-2"
                 />
               </div>
               <div class="flex items-center justify-between mt-6">
                 <select
                   name="location"
+                  required
                   id=""
                   class="w-full px-4 text-gray-700 placeholder:text-gray-700 py-2 rounded-l-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary appearance-none bg-white"
                   style="
@@ -207,19 +225,6 @@
           x-webkit-airplay="allow"
           disablePictureInPicture
         ></video>
-        <video
-          id="mobile-video"
-          class="md:hidden absolute inset-0 w-full h-[90vh] lg:h-full object-cover"
-          src="./assets/video-mobile.mp4"
-          autoplay
-          muted
-          loop
-          playsinline
-          preload="auto"
-          webkit-playsinline="true"
-          x-webkit-airplay="allow"
-          disablePictureInPicture
-        ></video>
         <div class="absolute inset-0 bg-black opacity-30"></div>
       </section>
 
@@ -233,7 +238,9 @@
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-5"
           >
-            <div
+            <a
+              href="https://theelderlywellness.com/physiotherapy-services-for-elders.html"
+              target="_blank"
               class="bg-white pt-5 rounded-t-3xl flex flex-col items-center shadow-sm"
             >
               <h3 class="text-lg font-semibold">Physiotherapy</h3>
@@ -242,8 +249,10 @@
                 live pain-free with expert care.
               </p>
               <img src="./assets/Physiotherapy.png" alt="Service 1" />
-            </div>
-            <div
+            </a>
+            <a
+              href="https://theelderlywellness.com/nursing-services-for-elders.html"
+              target="_blank"
               class="bg-white pt-5 rounded-t-3xl flex flex-col items-center shadow-sm"
             >
               <h3 class="text-lg font-semibold">Nursing</h3>
@@ -252,8 +261,10 @@
                 recovery, and peace of mind.
               </p>
               <img src="./assets/Nurse.png" alt="Service 1" />
-            </div>
-            <div
+            </a>
+            <a
+              href="https://theelderlywellness.com/geriatric-care-services-for-elders.html"
+              target="_blank"
               class="bg-white pt-5 rounded-t-3xl flex flex-col items-center shadow-sm"
             >
               <h3 class="text-lg font-semibold">Geriatric Care</h3>
@@ -262,8 +273,10 @@
                 independence, health, and emotional well-being.
               </p>
               <img src="./assets/geriatric-care.png" alt="Service 1" />
-            </div>
-            <div
+            </a>
+            <a
+              href="https://theelderlywellness.com/assisted-living-support-services-for-elders.html"
+              target="_blank"
               class="bg-white pt-5 rounded-t-3xl flex flex-col items-center shadow-sm"
             >
               <h3 class="text-lg font-semibold">Assisted Living Support</h3>
@@ -272,7 +285,7 @@
                 and a better quality of life.
               </p>
               <img src="./assets/assisted-living-care.png" alt="Service 1" />
-            </div>
+            </a>
           </div>
           <a
             class="bg-primary text-white py-2 px-6 mt-4 rounded-full hover:bg-black hover:scale-105 hover:text-white transition duration-300"
@@ -501,21 +514,22 @@
                     <div class="flex items-center mb-6">
                       <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
                         <img
-                          src="https://randomuser.me/api/portraits/women/65.jpg"
+                          src="./assets/dummy-avatar.jpg"
                           alt="Sarah Johnson"
                           class="w-full h-full object-cover"
                         />
                       </div>
                       <div>
-                        <h4 class="font-semibold text-lg">Sarah Johnson</h4>
-                        <p class="text-gray-600">Daughter of Client</p>
+                        <h4 class="font-semibold text-lg">Mrs. Lakshmi K.</h4>
+                        <p class="text-gray-600">Patient</p>
                       </div>
                     </div>
                     <p class="text-gray-700 italic">
-                      "The caregiver assigned to my father was absolutely
-                      wonderful. She was patient, kind, and truly understood his
-                      needs. I can't thank Elderly Wellness enough for their
-                      compassionate service."
+                      "After my knee replacement, I struggled with mobility
+                      until Elderly Wellness assigned me a physiotherapist. The
+                      personalized exercises and home sessions helped me walk
+                      without pain in just 8 weeks. The caregiver was patient
+                      and professional—I’m now gardening again!"
                     </p>
                     <div class="flex mt-4 text-yellow-400">
                       <i class="ri-star-fill"></i>
@@ -535,21 +549,22 @@
                     <div class="flex items-center mb-6">
                       <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
                         <img
-                          src="https://randomuser.me/api/portraits/men/32.jpg"
+                          src="./assets/dummy-avatar.jpg"
                           alt="Michael Chen"
                           class="w-full h-full object-cover"
                         />
                       </div>
                       <div>
-                        <h4 class="font-semibold text-lg">Michael Chen</h4>
+                        <h4 class="font-semibold text-lg">Rajiv M.</h4>
                         <p class="text-gray-600">Son of Client</p>
                       </div>
                     </div>
                     <p class="text-gray-700 italic">
-                      "The physiotherapy sessions have made a world of
-                      difference for my mother's mobility. The therapist was
-                      professional and tailored each session to her abilities.
-                      Highly recommend!"
+                      "Living abroad, I worried constantly about my diabetic
+                      father’s care. Elderly Wellness provided a trained nurse
+                      who monitored his sugar levels, administered insulin, and
+                      even sent me daily updates. Their 24/7 support gave me
+                      peace of mind. Truly a lifesaver!"
                     </p>
                     <div class="flex mt-4 text-yellow-400">
                       <i class="ri-star-fill"></i>
@@ -569,21 +584,24 @@
                     <div class="flex items-center mb-6">
                       <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
                         <img
-                          src="https://randomuser.me/api/portraits/women/44.jpg"
+                          src="./assets/dummy-avatar.jpg"
                           alt="Lisa Rodriguez"
                           class="w-full h-full object-cover"
                         />
                       </div>
                       <div>
-                        <h4 class="font-semibold text-lg">Lisa Rodriguez</h4>
-                        <p class="text-gray-600">Client</p>
+                        <h4 class="font-semibold text-lg">Dr. Ananya R.</h4>
+                        <p class="text-gray-600">
+                          Daughter of a dementia patient
+                        </p>
                       </div>
                     </div>
                     <p class="text-gray-700 italic">
-                      "As someone who values independence, I was hesitant about
-                      getting help. But the team at Elderly Wellness respects my
-                      autonomy while providing just the right support. It's been
-                      life-changing."
+                      "My mother’s dementia made daily tasks overwhelming.
+                      Elderly Wellness’s caregiver not only assisted with meals
+                      and hygiene but also engaged her with memory exercises.
+                      Their compassionate approach made Mom feel independent and
+                      safe at home. Highly recommended!"
                     </p>
                     <div class="flex mt-4 text-yellow-400">
                       <i class="ri-star-fill"></i>
